@@ -78,8 +78,8 @@ if streamlit.button('Get Fruit Load First'):
 #streamlit.header("The fruit load list contains:")
 #streamlit.dataframe(my_data_rows)
 # don't run anything past here while we troubleshoot
-streamlit.stop()
-streamlit.write('This should not run')
+#streamlit.stop()
+#streamlit.write('This should not run')
 
 # Allow end user to add fruit to the list
 def insert_row_snowflake(new_fuit):
