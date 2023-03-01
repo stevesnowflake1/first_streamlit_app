@@ -66,7 +66,11 @@ my_data_rows = my_cur.fetchall() # get all data rows
 #streamlit.text(my_data_row)
 streamlit.header("The fruit load list contains:")
 streamlit.dataframe(my_data_rows)
-streamlit.dataframe(my_data_rows).append({'stevefruit'}, ignore_index=True)
+# Allow end user to add fruit to the list
+add_my_fuit = streamlit.text_input('What fruit would you like to add?','Kiwi')
+streamlit.write('Thank you for adding ', add_my_fuit)
+
+#streamlit.dataframe(my_data_rows).append({'stevefruit'}, ignore_index=True)
 #df = df.append({'Ticker': ticker_add}, ignore_index=True)
 
 
